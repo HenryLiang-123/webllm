@@ -4,7 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = form.querySelector('button');
     const messageList = document.getElementById('message-list');
     const chatWindow = document.getElementById('chat-window');
+
+
+
+    // Initial message
+    const typingBubble = addMessage('', 'bot-message');
+      showTypingIndicator(typingBubble);
   
+      // Simulate bot response after delay
+      setTimeout(() => {
+        typingBubble.innerHTML = 'You\'re talking to a mini Henry Liang. Ask me anything about myself!';
+        scrollToBottom();
+  
+        // Re-enable input and button now that response is shown
+        toggleInput(true);
+        input.focus();
+      }, 1500);
+
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const userMessage = input.value.trim();
