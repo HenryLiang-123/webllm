@@ -18,7 +18,6 @@ html, body {
 
 
   
-  
   /* 1/6 of viewport height is ~16.6667vh */
   .top-spacer {
     flex: 0 0 16.6667vh;
