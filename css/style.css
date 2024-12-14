@@ -14,6 +14,10 @@ html, body {
   body {
     /* Body is a column of: top spacer, chat container, bottom spacer */
   }
+
+
+
+  
   
   /* 1/6 of viewport height is ~16.6667vh */
   .top-spacer {
